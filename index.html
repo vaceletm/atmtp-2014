@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Le revue de code expliquée aux Agilistes</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/enalean/enalean.css" id="theme">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Front page -->
+				<section class="no-slide-number"> <!-- add class="no-slide-number" to hide the slide number during this slide -->
+					<img class="logo-front-page" src="css/theme/enalean/img/enalean-logo.png" />
+					<h1>Le revue de code expliquée aux Agilistes</h1>
+					<h3>@vaceletm</h3>
+
+					<div class="footer"><img src="css/theme/enalean/img/enalean-logo-tiny.png" /><a href="www.enalean.com">www.enalean.com</a></div>
+				</section>
+
+                                <section>
+                                    <h1>Bio</h1>
+                                    <ul>
+                                        <li>Enalean CTO</li>
+                                        <li>Developer</li>
+                                        <li>Agile</li>
+                                        <li>Software engineering</li>
+                                    </ul>
+                                    <div class="footer"><img src="css/theme/enalean/img/enalean-logo-tiny.png" /><a href="www.enalean.com">www.enalean.com</a></div>
+                                </section>
+
+                                <section>
+                                    <h1>Why to review code ?</h1>
+                                    <img src='img/code_review_2.jpg' />
+                                </section>
+
+                                <section>
+                                    <h1>Where it comes from ?</h1>
+                                    <ul>
+                                        <li>Well known practice in FLOSS* world</li>
+                                        <li>Various strategy: patches (LKML), "pull requests", ...</li>
+                                    </ul>
+                                    <small>* Free Libre and Open Source Software</small>
+                                </section>
+
+                                <section>
+                                    <h1>But... we build a culture of trust !</h1>
+                                    
+                                </section>
+
+                                <section>
+                                    <h1>But... we are doing pair programming !</h1>
+                                </section>
+
+                                <section>
+                                    <h1>But... it slows down delivery flow !</h1>
+
+                                </section>
+
+                                <section>
+                                    <h1>Introducing Tuleap project</h1>
+
+                                </section>
+
+                                <section>
+                                    <h1>Code review practices</h1>
+                                    <ul>
+                                        <li>Commit reading (aka. Nicolas stands up)</li>
+                                        <li>Diff in wiki pages (don't do that!)</li>
+                                        <li>Review board</li>
+                                        <li>Gerrit</li>
+                                    </ul>
+                                </section>
+
+
+                                <section>
+                                    <h1>Gerrit</h1>
+                                    <img src="img/diffy-w200.png" style="background: white; padding: 5px;" />
+                                    <ul>
+                                        <li>Comes from Android project</li>
+                                        <li>Git only</li>
+                                        <li>Users: Eclipse, Openstack, Sony, Motorola, Google, SAP, ...</li>
+                                    </ul>
+                                </section>
+
+                                <section>
+                                  <h1>Gerrit workflow</h1>
+                                  <img src="img/gerrit_workflow.png" />
+                                </section>
+
+                                <section>
+                                    <h1>Reviews dashboard</h1>
+                                    <img src="img/open.png" />
+                                </section>
+
+                                <section>
+                                    <h1>One review</h1>
+                                        <img src="img/patchset.png" />
+                                </section>
+
+                                <section>
+                                    <h1>Patch</h1>
+                                    <img src="img/patch.png" />
+                                </section>
+
+                                <section>
+                                    <h1>Diff, comments</h1>
+                                    <img src="img/diff.png" />
+                                </section>
+
+                                <section>
+                                    <h1>Review each commit</h1>
+                                    <ul>
+                                        <li>each commit is a functional subset of the story</li>
+                                        <li>clean your history</li>
+                                    </ul>
+                                </section>
+
+                                <section>
+                                    <h1>Shape your commits!</h1>
+                                    <img src="img/shape_commits.png" />
+                                </section>
+
+                                <section>
+                                    <h1>Developer flow</h1>
+                                    <img src="img/flow.png" />
+                                </section>
+
+                                <section>
+                                    <h1>Why it speeds up ?</h1>
+                                    <ul>
+                                        <li>Focus on delivery & integration</li>
+                                        <li>All commits are read by at least 2 devs</li>
+                                        <li>Better commits (content & form)</li>
+                                    </ul>
+                                </section>
+
+                                <section>
+                                    <h1>Conclusion</h1>
+                                    <ul>
+                                        <li>It was not an easy move</li>
+                                        <li>but it was worth the effort</li>
+                                        <li>interesting side effect: git fu</li>
+                                    </ul>
+                                </section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		<script>
+			Reveal.initialize({
+				width: '100%',
+				height: '100%',
+				margin: 0,
+				controls: false,
+				progress: true,
+				history: true,
+				center: false,
+				slideNumber: true,
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+		</script>
+		<script>
+			function handleNoSlideNumber() {
+				var sections = document.querySelectorAll("section.present");
+				var slide_number = document.querySelectorAll(".slide-number");
+
+				for (var i = 0, length = sections.length; i < length; i++) {
+				    if (sections[i].classList.contains('no-slide-number')) {
+				    	slide_number[0].style.display = 'none';
+				    } else {
+				    	slide_number[0].style.display = 'block';
+				    }
+				}
+			}
+			Reveal.addEventListener('ready', function(event) { handleNoSlideNumber(); });
+			Reveal.addEventListener('slidechanged', function(event) { handleNoSlideNumber(); });
+		</script>
+	</body>
+</html>
